@@ -1,0 +1,38 @@
+<head>
+  <style>
+    .bar rect {
+      fill: steelblue;
+      transition: fill 0.3s;
+    }
+
+    .bar rect:hover {
+      fill: teal;
+    }
+
+    .bar rect:not(:hover) {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <figure>
+    <figcaption>A graph that shows the number of fruit collected</figcaption>
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      class="chart"
+      width="420"
+      height="150"
+      aria-labelledby="title"
+      role="img"
+    >
+      <g class="bar"><rect width="10" height="80" x="0"></rect></g>
+      <g class="bar"><rect width="10" height="50" x="20"></rect></g>
+      <!-- <g class="bar"><rect width="10" height="40" x="20"></rect></g>
+      <g class="bar"><rect width="10" height="35" x="30"></rect></g>
+      <g class="bar"><rect width="10" height="90" x="40"></rect></g> -->
+    </svg>
+  </figure>
+</body>
