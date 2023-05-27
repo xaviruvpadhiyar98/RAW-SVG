@@ -1,3 +1,10 @@
+    twitter_blue = '#1DA1F2'
+    light_gray = '#F2F2F2'
+    dark_gray = '#333333'
+    orange = '#FF8800'
+
+
+
     # Apply styles to the DataFrame
     styled_df = styled_df.set_table_styles([
         {'selector': 'th',
