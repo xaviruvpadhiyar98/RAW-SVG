@@ -1,0 +1,20 @@
+    # Apply styles to the DataFrame
+    styled_df = styled_df.set_table_styles([
+        {'selector': 'th',
+         'props': [('background-color', twitter_blue), ('color', 'white'), ('font-weight', 'bold'),
+                   ('padding', '10px 15px'), ('text-align', 'center')]},
+        {'selector': 'td',
+         'props': [('padding', '10px 15px'), ('text-align', 'center')]},
+        {'selector': 'tr:nth-child(even) td',
+         'props': [('background-color', 'white')]},
+        {'selector': 'tr:nth-child(odd) td',
+         'props': [('background-color', light_gray)]},
+        {'selector': 'td[data-type="int64"]',
+         'props': [('color', twitter_blue), ('font-weight', 'bold')]},
+        {'selector': 'td[data-type="float64"]',
+         'props': [('color', orange), ('font-weight', 'bold')]},
+        {'selector': 'td[data-type="object"]',
+         'props': [('color', dark_gray), ('font-weight', 'bold')]},
+    ])
+    
+    return styled_df
